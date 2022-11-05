@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet(name = "helloServlet", urlPatterns = "/hello")
-public class HelloServelet extends HttpServlet {
+public class HelloServlet extends HttpServlet {
 
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -22,7 +22,7 @@ public class HelloServelet extends HttpServlet {
 
         response.setContentType("text/plain");
         response.setCharacterEncoding("utf-8");
-        response.getWriter().write("hello" + username);
+        response.getWriter().write("hello "+username);
 
     }
 
