@@ -2,10 +2,6 @@ package hello.advanced.trace.HelloTraceV1;
 
 import hello.advanced.trace.TraceStatus;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.stereotype.Service;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 
 public class HelloTraceV1Test {
@@ -29,7 +25,11 @@ public class HelloTraceV1Test {
          TraceStatus status = trace.begin("hello");
          trace.exception(status, new IllegalStateException());
          //when
-         
+
+         System.out.println();
+         StringBuilder sb = new StringBuilder();
+         sb.append("dfdf");
+
          //then
       
       }
